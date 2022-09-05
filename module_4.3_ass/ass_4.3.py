@@ -75,6 +75,13 @@ for item in items:
     print(f"{first_name:16}{last_name:16}{email:10}{course}")
 
 conn.commit()
+# print("deleted")
+
+# #print confirmation message
+# print("Command executed successfully...")
+
+#commit database and table
+# conn.commit()
 
 # Alter table Statement
 # change name of my table
