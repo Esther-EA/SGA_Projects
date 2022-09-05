@@ -49,19 +49,19 @@ gs = conn.cursor()
 # """,
 # SGA_data
 # )
-
+     
 # conn.commit
 
 # check
 # print('Inserted multiple records')
 
 # # #QUERY
-gs.execute(
-"""
-SELECT * FROM students_info
+# gs.execute(
+# """
+# SELECT * FROM students_info
 
-"""
-)
+# """
+# )
 
 # #fetchall rows in the table
 items = gs.fetchall()
@@ -74,11 +74,7 @@ for item in items:
     first_name, last_name, email, course = item
     print(f"{first_name:16}{last_name:16}{email:10}{course}")
 
-conn.commit()
-# print("deleted")
-
-# #print confirmation message
-# print("Command executed successfully...")
+# conn.commit()
 
 #commit database and table
 # conn.commit()
@@ -101,7 +97,7 @@ conn.commit()
 gs.execute("""UPDATE students_info SET course = 'Data Science' """)
 conn.commit
 
-# # # check
-# # print("course info set")
+# # check
+# print("course info set")
 
-# conn.close()
+# conn.close()                                                                                       
