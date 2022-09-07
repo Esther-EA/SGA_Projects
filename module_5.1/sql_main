@@ -1,0 +1,8 @@
+SELECT inventory_name, Price, Quantity,
+CASE
+WHEN Quantity <= '15' THEN 'Restock'
+ELSE 'Available' 
+END
+FROM inventory_data
+WHERE Quantity IS NOT NULL
+ORDER BY Price DESC
