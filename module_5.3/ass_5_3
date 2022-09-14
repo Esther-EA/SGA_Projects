@@ -1,0 +1,3 @@
+SELECT 
+MAX(Quantity) AS MAXIMUM
+FROM inventory_data2;
