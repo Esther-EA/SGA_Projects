@@ -1,0 +1,3 @@
+SELECT 
+AVG(English) AS AVERAGE
+FROM waec_table
